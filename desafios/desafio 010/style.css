@@ -1,0 +1,33 @@
+body {
+    background-color: #84E1AD;
+}
+main {
+    margin: auto;
+    background-color: white;
+    width: 800px;
+    padding: 20px;
+    margin: auto;    
+}
+#cabecalho {
+    background-image: linear-gradient(to bottom, #3DDB84, #195B38);
+    height: 100%;
+    width: 100%;
+ 
+}
+
+div#cabecalho {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+.textintro {
+    text-align: center;
+
+}
+picture {
+    text-align: center;
+}
+
+    
