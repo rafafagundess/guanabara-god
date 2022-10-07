@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white; 
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>Coisas maneiras em uma tabela</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 649</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>04982049823</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>032984032984</td>
+            </tr>
+            <tr>
+                <td>Macapá</td>
+                <td>23049104319</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>0234893204982304</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>2349083238492</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>2398427984</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td>00000000</td>
+            </tr>            
+        </tfoot>
+    </table>
+
+</body>
+</html>
