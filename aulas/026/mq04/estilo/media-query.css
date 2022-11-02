@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/*todas as demais mídias*/
+/* typical device breakpoints
+
+pequenas telas: até 600px
+cell: 600px até 768px
+tablet: 768px até 992px
+grandes telas; acima de 1200px 
+
+*/
+
+@media print {
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 2px solid black
+    }
+
+    main::after {
+        content: "Essa impressão foi feita por um cara muito gostoso, slk";
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#pc {
+        display: none;
+    }
+    img#phone {
+        display: none;
+    }
+    img#tablet {
+        display: block;
+    }
+    img#print {
+        display: none;
+    }
+    img#tv {
+        display: none;
+    }
+    
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#pc {
+        display: block;
+    }
+    img#phone {
+        display: none;
+    }
+    img#tablet {
+        display: none;
+    }
+    img#print {
+        display: none;
+    }
+    img#tv {
+        display: none;
+    }
+    
+    
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main {
+        width: 700px;
+    }
+
+    img#pc {
+        display: none;
+    }
+    img#phone {
+        display: none;
+    }
+    img#tablet {
+        display: none;
+    }
+    img#print {
+        display: none;
+    }
+    img#tv {
+        display: block;
+    }
+    
+}
+
